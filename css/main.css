@@ -196,11 +196,14 @@ a {
 
 .overlay-content {
     position: relative;
-    top: 18%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    padding: 0px 30px;
 }
 
 .overlay a {
@@ -212,9 +215,9 @@ a {
     transition: 0.3s;
 }
 
-.overlay-content a {
+/* .overlay-content a {
     display: block;
-}
+} */
 
 .overlay a:hover, .overlay a:focus {
     color: #825cff;
@@ -228,10 +231,7 @@ a {
 }
 
 .overlay .socialMenuMobile {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: inline;
     font-size: 30px;
     text-align: center;
 }
@@ -262,9 +262,7 @@ a {
         right: 35px;
     }
     .overlay .socialMenuMobile {
-        bottom: 10%;
         font-size: 60px;
-        width: 80%;
     }
     .overlay img {
         position: absolute;
